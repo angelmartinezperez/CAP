@@ -1,0 +1,4 @@
+(build-palindrome '(2 4 6))
+(remove-list '(1 4 5 3 4 5 1 2) '(2 4))
+(odds-n-evens '(1 4 5 3 4 5 1 2 7 4 2))
+(prime-divisors 255)

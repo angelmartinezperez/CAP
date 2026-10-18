@@ -1,0 +1,8 @@
+(defn power [n p] (reduce * 1 (repeat p n)))
+(def my-count (partial reduce (fn [cnt _] (inc cnt)) 0))
+(def average #(/ (reduce + 0 %) (my-count %)))
+(def build-palindrome #(concat (reduce conj '() %) %))
+(defn conj-if [cond lst elem] (if (cond elem) (conj lst elem) lst))
+(def odds-n-evens #(conj '() (reverse (reduce (partial conj-if even?) '() %)) (reverse (reduce (partial conj-if odd?) '() %))))
+(defn appears [elem list] (reduce #(or %1 (= %2 elem)) false list))
+(defn remove-list [x y] (reverse (reduce (partial (partial conj-if #((partial not (appears % y))))) '() x)))

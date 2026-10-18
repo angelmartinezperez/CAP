@@ -1,0 +1,5 @@
+(defn my-map [f lst] (for [x lst] (f x)))
+(defn my-filter [f lst] (for [x lst :when (f x)] x))
+(defn my-zip-with [f lst1 lst2] (for [zipped_elem (map f lst1 lst2)] zipped_elem))
+(def thingify #(for [x %1 y %2 :when (= 0 (rem x y))] [x y]))
+(defn factors [n] (for [x (range 1 (inc n)) :when (= 0 (rem n x))] x))

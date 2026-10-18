@@ -1,0 +1,7 @@
+(def eql #(and (every? true? (map = %1 %2)) (= (count %1) (count %2))))
+(def prod-of-evens #(->> % (filter even?) (reduce *)))
+(def my-reverse #(apply conj '() %))
+(def scalar-product #(reduce + (map * %1 %2)))
+(defn count-in [lsts x] (map #(->> % (filter (partial = x)) count) lsts))
+(def whitespace? #(= \  %))
+(def first-word #(->> % (drop-while whitespace?) (take-while (comp not whitespace?)) (apply str)))

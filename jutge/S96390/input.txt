@@ -1,0 +1,6 @@
+(my-count1 '(1 2 2))
+(my-count2 '(1 2 2))
+(my-maximum1 '(4 3 1 5 4 5 2))
+(my-maximum2 '(4 3 1 5 4 5 2))
+(average1 '(1 2 3))
+(average2 '(1 2 3))
