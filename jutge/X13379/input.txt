@@ -1,0 +1,3 @@
+(mides '("Pep" "Anna" "Joan" "Pau" "Montse"))
+(noms {"Pep" 19 "Anna" 25 "Joan" 15 "Pau" 8 "Montse" 22})
+(suma [{:quantitat 3 :preu 35} {:quantitat 2 :preu 75} {:quantitat 4 :preu 20}])
